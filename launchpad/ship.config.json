@@ -2,5 +2,8 @@
   "shipName": "SUKHOI",
   "color": "red",
   "shipModel": "interceptor",
+  "shipName": "Nebula Runner",
+  "color": "#22d3ee",
+  "shipModel": "hauler",
   "emblem": "phoenix"
 }
