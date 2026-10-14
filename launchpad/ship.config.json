@@ -1,6 +1,6 @@
 {
-  "shipName": "",
-  "color": "pink",
+  "shipName": "Nebula Runner",
+  "color": "#22d3ee",
   "shipModel": "hauler",
   "emblem": "phoenix"
 }
