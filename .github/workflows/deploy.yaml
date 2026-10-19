@@ -1,5 +1,7 @@
 name: deploy
-on: [push, workflow_dispatch]
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, closed]
 
 defaults:
   run:
@@ -20,6 +22,7 @@ jobs:
           SHIPIT_TOKEN: ${{ secrets.SHIPIT_TOKEN }}
   deploy:
     needs: test
+    if: github.event.pull_request.merged == false 
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
